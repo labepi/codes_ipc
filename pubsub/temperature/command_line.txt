@@ -1,0 +1,11 @@
+
+For command line, with mosquitto clients:
+
+- Subscribe
+
+mosquitto_sub -h 127.0.0.1 -p 1883 -q 2 -t sensors/temperature
+
+- Publish
+
+mosquitto_pub -h 127.0.0.1 -p 1883 -q 2 -t sensors/temperature -m 25
+
