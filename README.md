@@ -1,10 +1,10 @@
 # Codes SD
 
-Códigos para a disciplina de Sistemas Distribuídos.
+Códigos para o estudo de Comunicação Entre Processos.
 
 Diretórios com códigos de exemplos:
 
-* ipc - InterProcess Communication
+* ipc - Inter Process Communication
 * rpc - Remote Procedure Calls
 * rmi - Remote Method Invocation
 * pubsub - Publish/Subscribe

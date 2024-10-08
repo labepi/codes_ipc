@@ -16,7 +16,7 @@ void local_message(int s)
 
 void remote_message(int s) 
 {
-     printf("Imprimindo mensagem remota...\n" );
+     printf("Imprimindo mensagem remota...\n", s);
 }
 
 int main(void) {
