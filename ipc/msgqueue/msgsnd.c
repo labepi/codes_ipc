@@ -46,7 +46,7 @@ int main()
     printf("O tamanho da mensagem é %d bytes\n\n",tamanhomensagem);
 
     // enviando uma mensagem para a fila
-    if (msgsnd(msqid,&mensagem,tamanhomensagem,IPC_NOWAIT) == -1)
+    if (msgsnd(msqid, &mensagem, tamanhomensagem, IPC_NOWAIT) == -1)
     {
         printf("Nao foi possivel enviar a mensagem\n");
         exit(-1);

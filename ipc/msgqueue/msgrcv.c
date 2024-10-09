@@ -36,7 +36,10 @@ int main()
 
     tamanhomensagem = 328;
 
-    if (msgrcv(msqid,&mensagem,tamanhomensagem,1,IPC_NOWAIT) == -1)
+    // primeira mensagem que o mtype for igual
+    int msgtyp = 1;
+
+    if (msgrcv(msqid, &mensagem, tamanhomensagem, msgtyp, IPC_NOWAIT) == -1)
     {
         printf("Nao foi possivel ler a mensagem\n");
         exit(-1);
