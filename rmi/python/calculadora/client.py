@@ -20,5 +20,5 @@ calc = Pyro5.api.Proxy("PYRONAME:calculadora@localhost:8888")
 # Exemplo: conectando diretamente ao objeto remoto (caso conheça seu URI)
 # calc = Pyro5.api.Proxy("PYRO:obj_e17ddd5a1d3945b3a56a24394e8742f2@{}:8080".format(IPNUVEM))
 
-print("Som: {}", calc.add(x, y))
-print("Sub: {}", calc.sub(x, y))
+print("Som:", calc.add(x, y))
+print("Sub:", calc.sub(x, y))
