@@ -18,6 +18,7 @@ prevnext_1(char *host, int num)
 
 #ifndef	DEBUG
 	clnt = clnt_create (host, PREVNEXT, PREVNEXT_VERSAO1, "tcp");
+	// clnt = clnt_create (host, PREVNEXT, PREVNEXT_VERSAO1, "udp");
 	if (clnt == NULL) {
 		clnt_pcreateerror (host);
 		exit (1);

@@ -11,11 +11,12 @@ def subtrair(x, y):
     return x - y
 
 
-IP = "localhost"
+# dados da conexao com o servidor
+IP = ""
 PORTA = 8000
 
 # criando o servidor RPC
-server = SimpleXMLRPCServer(("", PORTA))
+server = SimpleXMLRPCServer((IP, PORTA))
 
 # registrando as funcoes que serao ofertadas
 server.register_function(somar, 'somar')

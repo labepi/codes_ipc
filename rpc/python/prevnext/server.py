@@ -1,10 +1,13 @@
 from xmlrpc.server import SimpleXMLRPCServer
 
+
 def prev(x):
     return x - 1
 
+
 def next(x):
     return x + 1
+
 
 IP = "localhost"
 PORTA = 8000
